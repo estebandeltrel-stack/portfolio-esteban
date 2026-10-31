@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Esteban Deltrel - Portfolio Ingénieur</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .bg-navy { background-color: #1a2b4c; }
+    .text-navy { color: #1a2b4c; }
+    .border-navy { border-color: #1a2b4c; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col">
+
+  <!-- EN-TÊTE / BANDE BLEUE EN HAUT -->
+  <header class="bg-navy text-white sticky top-0 z-50 shadow-md">
+    <div class="max-w-5xl mx-auto px-4 py-3 flex justify-between items-center">
+      <div class="flex items-center space-x-3">
+        <span class="font-bold text-lg tracking-wide">ESTEBAN DELTREL</span>
+      </div>
+      <nav class="hidden md:flex space-x-6 text-base font-medium">
+        <a href="#welcome" class="hover:text-amber-400 transition" data-fr="Accueil" data-en="Home">Accueil</a>
+        <a href="#engineering" class="hover:text-amber-400 transition" data-fr="Parcours & Projets" data-en="Engineering">Parcours & Projets</a>
+        <a href="#mobility" class="hover:text-amber-400 transition" data-fr="Mobilité" data-en="Mobility">Mobilité</a>
+        <a href="#engagement" class="hover:text-amber-400 transition" data-fr="Engagement" data-en="Engagement">Engagement</a>
+        <a href="#activities" class="hover:text-amber-400 transition" data-fr="Loisirs" data-en="Hobbies">Loisirs</a>
+        <a href="#career" class="hover:text-amber-400 transition" data-fr="Carrière" data-en="Career">Carrière</a>
+        <a href="#contact" class="hover:text-amber-400 transition" data-fr="Contact" data-en="Contact">Contact</a>
+      </nav>
+      <button id="lang-toggle" class="bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold px-3 py-1.5 rounded text-sm transition">
+        EN
+      </button>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-4 py-8 flex-grow w-full space-y-12">
+
+   <!-- SECTION WELCOME / PRÉSENTATION -->
+    <section id="welcome" class="bg-white p-6 md:p-8 rounded-lg border border-slate-200 shadow-sm">
+      <div class="flex flex-col md:flex-row items-center gap-6">
+        <!-- Photo de profil à la place des initiales ED -->
+        <div class="w-48 h-48 rounded-full bg-navy border-4 border-slate-100 flex-shrink-0 overflow-hidden shadow-sm">
+          <img src="photo-profil.png" alt="Esteban Deltrel" class="w-full h-full object-cover">
+        </div>
+        <div class="space-y-2 text-center md:text-left flex-grow">
+          <h1 class="text-2xl md:text-3xl font-extrabold text-slate-900">Esteban Deltrel</h1>
+          <p class="text-slate-600 font-medium text-lg" data-fr="Étudiant ingénieur en 3EA (Électronique, Énergie Électrique, Automatique) – ENSEEIHT (Toulouse INP)" data-en="Engineering Student in 3EA (Electronics, Electrical Energy, Automatics) – ENSEEIHT (Toulouse INP)">
+            Étudiant ingénieur en 3EA (Électronique, Énergie Électrique, Automatique) – ENSEEIHT (Toulouse INP)
+          </p>
+          <p class="text-base text-slate-500 max-w-2xl" data-fr="Passionné par les circuits intégrés et le développement de systèmes électroniques. Formation axée sur la maîtrise des composants intelligents et de l'ingénierie appliquée." data-en="Passionate about integrated circuits and electronic system design. Academic focus on smart components and applied engineering.">
+            Passionné par les circuits intégrés et le développement de systèmes électroniques. Formation axée sur la maîtrise des composants intelligents et de l'ingénierie appliquée.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION PARCOURS ET PROJETS D'INGÉNIEUR -->
+    <section id="engineering" class="space-y-6">
+      <div class="border-b border-slate-300 pb-2">
+        <h2 class="text-2xl font-bold text-navy" data-fr="Parcours et projets d'ingénieur" data-en="Engineering Background & Projects">Parcours et projets d'ingénieur</h2>
+      </div>
+
+      <!-- COMPÉTENCES -->
+      <div class="bg-white p-6 rounded-lg border border-slate-200 shadow-sm space-y-4">
+        <h3 class="text-xl font-bold text-slate-900" data-fr="Compétences" data-en="Skills">Compétences</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div>
+            <h4 class="font-semibold text-slate-700 mb-2 text-base" data-fr="Logiciels & Langages" data-en="Software & Languages">Logiciels & Langages</h4>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-slate-100 text-slate-800 text-sm px-3 py-1.5 rounded font-medium border border-slate-200">Python</span>
+              <span class="bg-slate-100 text-slate-800 text-sm px-3 py-1.5 rounded font-medium border border-slate-200">LaTeX</span>
+              <span class="bg-slate-100 text-slate-800 text-sm px-3 py-1.5 rounded font-medium border border-slate-200">Langage C</span>
+              <span class="bg-slate-100 text-slate-800 text-sm px-3 py-1.5 rounded font-medium border border-slate-200">Latis-Pro</span>
+              <span class="bg-slate-100 text-slate-800 text-sm px-3 py-1.5 rounded font-medium border border-slate-200">Excel</span>
+              <span class="bg-slate-100 text-slate-800 text-sm px-3 py-1.5 rounded font-medium border border-slate-200">Canva</span>
+            </div>
+          </div>
+          <div>
+            <h4 class="font-semibold text-slate-700 mb-2 text-base" data-fr="Ingénierie 3EA" data-en="3EA Engineering">Ingénierie 3EA</h4>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-slate-100 text-slate-800 text-sm px-3 py-1.5 rounded font-medium border border-slate-200" data-fr="Électronique analogique & numérique" data-en="Analog & Digital Electronics">Électronique analogique & numérique</span>
+              <span class="bg-slate-100 text-slate-800 text-sm px-3 py-1.5 rounded font-medium border border-slate-200" data-fr="Traitement du signal" data-en="Signal Processing">Traitement du signal</span>
+              <span class="bg-slate-100 text-slate-800 text-sm px-3 py-1.5 rounded font-medium border border-slate-200" data-fr="Automatique" data-en="Automatics">Automatique</span>
+              <span class="bg-slate-100 text-slate-800 text-sm px-3 py-1.5 rounded font-medium border border-slate-200" data-fr="Énergie électrique" data-en="Electrical Energy">Énergie électrique</span>
+            </div>
+          </div>
+          <div>
+            <h4 class="font-semibold text-slate-700 mb-2 text-base" data-fr="Savoir-être" data-en="Soft Skills">Savoir-être</h4>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-slate-100 text-slate-800 text-sm px-3 py-1.5 rounded font-medium border border-slate-200" data-fr="Capacité d'adaptation" data-en="Adaptability">Capacité d'adaptation</span>
+              <span class="bg-slate-100 text-slate-800 text-sm px-3 py-1.5 rounded font-medium border border-slate-200" data-fr="Autonomie" data-en="Autonomy">Autonomie</span>
+              <span class="bg-slate-100 text-slate-800 text-sm px-3 py-1.5 rounded font-medium border border-slate-200" data-fr="Communication" data-en="Communication">Communication</span>
+              <span class="bg-slate-100 text-slate-800 text-sm px-3 py-1.5 rounded font-medium border border-slate-200" data-fr="Sens des responsabilités" data-en="Responsibility">Sens des responsabilités</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJETS ACADÉMIQUES -->
+      <div class="bg-white p-6 rounded-lg border border-slate-200 shadow-sm space-y-4">
+        <h3 class="text-xl font-bold text-slate-900" data-fr="Projets académiques" data-en="Academic Projects">Projets académiques</h3>
+        <div class="border border-slate-200 rounded-lg p-4 space-y-4">
+          <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
+            <h4 class="font-bold text-lg text-slate-900" data-fr="Exploitation de l'énergie solaire" data-en="Solar Energy Exploitation">Exploitation de l'énergie solaire</h4>
+            <span class="text-sm bg-slate-100 text-slate-600 px-3 py-1 rounded border border-slate-200 mt-1 md:mt-0 font-medium" data-fr="Projet en équipe" data-en="Team Project">Projet en équipe</span>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
+            <div class="md:col-span-2 space-y-3">
+              <p class="text-base text-slate-600" data-fr="Réalisation d'un projet d'étude en 2e année à la prépa T² sur l'exploitation de l'énergie solaire, alliant travaux pratiques à l'IUT Mesures Physiques et étude du cas concret Hyguane en Guyane." data-en="Study project conducted during my 2nd year of T² prep class on solar energy exploitation, combining practical work at the Physical Measurements IUT and a case study on the Hyguane project in French Guiana.">
+                Réalisation d'un projet d'étude en 2e année à la prépa T² sur l'exploitation de l'énergie solaire, alliant travaux pratiques à l'IUT Mesures Physiques et étude du cas concret Hyguane en Guyane.
+              </p>
+              <div class="bg-slate-50 p-4 rounded border border-slate-200 text-sm text-slate-700 space-y-1">
+                <p class="font-semibold text-slate-900" data-fr="Apports personnels & Rôle :" data-en="Personal Contribution & Role:">Apports personnels & Rôle :</p>
+                <p data-fr="Suivi du calendrier et organisation du groupe : anticipation des livrables intermédiaires, fixation des échéances internes et répartition concertée des tâches selon les affinités de chacun." data-en="Schedule tracking and team organization: anticipating intermediate deliverables, setting internal deadlines, and consensus-based task allocation based on member strengths.">
+                  Suivi du calendrier et organisation du groupe : anticipation des livrables intermédiaires, fixation des échéances internes et répartition concertée des tâches selon les affinités de chacun.
+                </p>
+              </div>
+            </div>
+            <div class="h-40 bg-slate-100 rounded border border-slate-200 flex items-center justify-center text-sm text-slate-400 overflow-hidden">
+              <img src="projet-solaire.jpg" alt="Projet Solaire" class="w-full h-full object-cover" onerror="this.style.display='none'">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION MOBILITÉ INTERNATIONALE -->
+    <section id="mobility" class="space-y-6">
+      <div class="border-b border-slate-300 pb-2">
+        <h2 class="text-2xl font-bold text-navy" data-fr="Mobilité internationale" data-en="International Mobility">Mobilité internationale</h2>
+      </div>
+
+      <!-- LANGUES AVEC JAUGES DE NIVEAU -->
+      <div class="bg-white p-6 rounded-lg border border-slate-200 shadow-sm">
+        <h3 class="text-xl font-bold text-slate-900 mb-4" data-fr="Langues" data-en="Languages">Langues</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          
+          <div class="p-4 bg-slate-50 rounded border border-slate-200 space-y-3">
+            <div class="flex justify-between items-center">
+              <span class="font-bold text-slate-900 text-base" data-fr="Français" data-en="French">Français</span>
+              <span class="text-sm text-slate-600 font-medium" data-fr="Langue maternelle" data-en="Native speaker">Langue maternelle</span>
+            </div>
+            <div class="w-full bg-slate-200 rounded-full h-2">
+              <div class="bg-navy h-2 rounded-full" style="width: 100%"></div>
+            </div>
+          </div>
+
+          <div class="p-4 bg-slate-50 rounded border border-slate-200 space-y-3">
+            <div class="flex justify-between items-center">
+              <span class="font-bold text-slate-900 text-base" data-fr="Anglais" data-en="English">Anglais</span>
+              <span class="text-sm text-slate-600 font-medium" data-fr="Niveau B2" data-en="B2 Level">Niveau B2</span>
+            </div>
+            <div class="w-full bg-slate-200 rounded-full h-2">
+              <div class="bg-navy h-2 rounded-full" style="width: 75%"></div>
+            </div>
+          </div>
+
+          <div class="p-4 bg-slate-50 rounded border border-slate-200 space-y-3">
+            <div class="flex justify-between items-center">
+              <span class="font-bold text-slate-900 text-base" data-fr="Allemand" data-en="German">Allemand</span>
+              <span class="text-sm text-slate-600 font-medium" data-fr="Niveau B1" data-en="B1 Level">Niveau B1</span>
+            </div>
+            <div class="w-full bg-slate-200 rounded-full h-2">
+              <div class="bg-navy h-2 rounded-full" style="width: 50%"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- EXPÉRIENCES DE VOYAGE AVEC IMAGES -->
+      <div class="bg-white p-6 rounded-lg border border-slate-200 shadow-sm space-y-4">
+        <h3 class="text-xl font-bold text-slate-900" data-fr="Expériences de voyage" data-en="Travel Experiences">Expériences de voyage</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          
+          <div class="border border-slate-200 rounded p-5 flex flex-col justify-between space-y-4">
+            <div>
+              <div class="flex justify-between items-start mb-2">
+                <h4 class="font-bold text-slate-900 text-base" data-fr="Tchéquie – Prague" data-en="Czech Republic – Prague">Tchéquie – Prague</h4>
+                <span class="text-sm bg-slate-100 text-slate-600 px-2.5 py-1 rounded font-medium">2024</span>
+              </div>
+              <p class="text-sm text-slate-600 mb-3" data-fr="Voyage culturel, découverte du patrimoine historique et immersion dans l'environnement européen." data-en="Cultural trip, historical heritage discovery, and European environment immersion.">
+                Voyage culturel, découverte du patrimoine historique et immersion dans l'environnement européen.
+              </p>
+            </div>
+            <div class="h-32 bg-slate-100 rounded border border-slate-200 flex items-center justify-center text-sm text-slate-400 overflow-hidden">
+              <img src="prague.jpg" alt="Prague" class="w-full h-full object-cover" onerror="this.style.display='none'">
+            </div>
+          </div>
+
+          <div class="border border-slate-200 rounded p-5 flex flex-col justify-between space-y-4">
+            <div>
+              <div class="flex justify-between items-start mb-2">
+                <h4 class="font-bold text-slate-900 text-base" data-fr="Écosse – Séjour linguistique" data-en="Scotland – Language Stay">Écosse – Séjour linguistique</h4>
+                <span class="text-sm bg-slate-100 text-slate-600 px-2.5 py-1 rounded font-medium">2023</span>
+              </div>
+              <p class="text-sm text-slate-600 mb-3" data-fr="Séjour axé sur la pratique intensive de l'anglais et l'ouverture à une nouvelle culture." data-en="Stay focused on intensive English practice and cultural discovery.">
+                Séjour axé sur la pratique intensive de l'anglais et l'ouverture à une nouvelle culture.
+              </p>
+            </div>
+            <div class="h-32 bg-slate-100 rounded border border-slate-200 flex items-center justify-center text-sm text-slate-400 overflow-hidden">
+              <img src="ecosse.jpg" alt="Écosse" class="w-full h-full object-cover" onerror="this.style.display='none'">
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- PROJET DE MOBILITÉ FUTURE -->
+      <div class="bg-white p-6 rounded-lg border border-slate-200 shadow-sm">
+        <h3 class="text-xl font-bold text-slate-900 mb-2" data-fr="Projet de mobilité future" data-en="Future Mobility Project">Projet de mobilité future</h3>
+        <p class="text-base text-slate-600" data-fr="Projet en cours de définition. L'objectif est de réaliser un séjour académique ou un stage à l'international afin de sortir de ma zone de confort, de développer mon adaptabilité interculturelle et d'explorer de nouvelles méthodologies de travail. Quelques pistes sont développées dans la partie développement de carrière." data-en="Project currently being defined. The goal is an academic stay or international internship to step out of my comfort zone, build intercultural adaptability, and explore new working methodologies. A few tracks are developed in the career development section.">
+          Projet en cours de définition. L'objectif est de réaliser un séjour académique ou un stage à l'international afin de sortir de ma zone de confort, de développer mon adaptabilité interculturelle et d'explorer de nouvelles méthodologies de travail. Quelques pistes sont développées dans la partie développement de carrière. 
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION ENGAGEMENT CITOYEN & RSE -->
+    <section id="engagement" class="space-y-6">
+      <div class="border-b border-slate-300 pb-2">
+        <h2 class="text-2xl font-bold text-navy" data-fr="Engagement citoyen & RSE" data-en="Civic & CSR Engagement">Engagement citoyen & RSE</h2>
+      </div>
+      <div class="bg-white p-6 rounded-lg border border-slate-200 shadow-sm space-y-4">
+        <div class="flex items-center space-x-2">
+          <span class="bg-blue-100 text-blue-800 text-sm px-3 py-1.5 rounded font-semibold border border-blue-200" data-fr="Parcours & Continuité RSE" data-en="Background & CSR Continuity">Parcours & Continuité RSE</span>
+        </div>
+        <p class="text-base text-slate-600" data-fr="Mon engagement citoyen a débuté au lycée au sein de la Section Européenne axée sur le développement durable. Dans ce cadre, nous sommes intervenus auprès d'écoles primaires pour sensibiliser les jeunes enfants aux enjeux climatiques à travers des ateliers interactifs et des présentations pédagogiques. Cette expérience de transmission et d'impact concret m'a particulièrement marqué. Souhaitant poursuivre cette démarche au cours de mon cursus à l'ENSEEIHT, j'ai pour projet de m'investir dans une association étudiante afin de renouveler ce type d'actions d'ouverture sociale et de sensibilisation environnementale." data-en="My civic engagement began in high school within the European Section focused on sustainable development. As part of this program, we conducted workshops and educational presentations in primary schools to raise young children's awareness of climate issues. This rewarding experience of knowledge sharing and direct impact was deeply meaningful to me. Wishing to continue this involvement during my studies at ENSEEIHT, I plan to join a student association to renew these types of social outreach and environmental awareness initiatives.">
+          Mon engagement citoyen a débuté au lycée au sein de la Section Européenne axée sur le développement durable. Dans ce cadre, nous sommes intervenus auprès d'écoles primaires pour sensibiliser les jeunes enfants aux enjeux climatiques à travers des ateliers interactifs et des présentations pédagogiques. Cette expérience de transmission et d'impact concret m'a particulièrement marqué. Souhaitant poursuivre cette démarche au cours de mon cursus à l'ENSEEIHT, j'ai pour projet de m'investir dans une association étudiante afin de renouveler ce type d'actions d'ouverture sociale et de sensibilisation environnementale.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION SPORTS ET CENTRES D'INTÉRÊT -->
+    <section id="activities" class="space-y-6">
+      <div class="border-b border-slate-300 pb-2">
+        <h2 class="text-2xl font-bold text-navy" data-fr="Sports et centres d'intérêt" data-en="Sports & Interests">Sports et centres d'intérêt</h2>
+      </div>
+      <div class="bg-white p-6 rounded-lg border border-slate-200 shadow-sm">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          
+          <div class="border-l-2 border-navy pl-5 space-y-2">
+            <div class="flex items-center justify-between">
+              <h3 class="font-bold text-slate-900 text-base" data-fr="Batterie" data-en="Drums">Batterie</h3>
+              <span class="text-xs bg-slate-100 text-slate-600 px-2.5 py-1 rounded font-medium border border-slate-200" data-fr="Musique" data-en="Music">Musique</span>
+            </div>
+            <p class="text-sm text-slate-600" data-fr="Pratique de la batterie pendant plusieurs années. Développement de la rigueur, de l'écoute et du sens du rythme." data-en="Practiced drums for several years. Developed discipline, listening skills, and rhythm.">
+              Pratique de la batterie pendant plusieurs années. Développement de la rigueur, de l'écoute et du sens du rythme.
+            </p>
+          </div>
+
+          <div class="border-l-2 border-navy pl-5 space-y-2">
+            <div class="flex items-center justify-between">
+              <h3 class="font-bold text-slate-900 text-base" data-fr="Football" data-en="Football / Soccer">Football</h3>
+              <span class="text-xs bg-slate-100 text-slate-600 px-2.5 py-1 rounded font-medium border border-slate-200" data-fr="Sport d'équipe" data-en="Team Sport">Sport d'équipe</span>
+            </div>
+            <p class="text-sm text-slate-600" data-fr="Pratique du football en club. Esprit d'équipe, cohésion et régularité dans l'investissement." data-en="Club football practice. Team spirit, cohesion, and consistent commitment.">
+              Pratique du football en club. Esprit d'équipe, cohésion et régularité dans l'investissement.
+            </p>
+          </div>
+
+          <div class="border-l-2 border-navy pl-5 space-y-2">
+            <div class="flex items-center justify-between">
+              <h3 class="font-bold text-slate-900 text-base" data-fr="Musculation" data-en="Weight Training">Musculation</h3>
+              <span class="text-xs bg-slate-100 text-slate-600 px-2.5 py-1 rounded font-medium border border-slate-200" data-fr="Entraînement personnel" data-en="Personal Training">Entraînement personnel</span>
+            </div>
+            <p class="text-sm text-slate-600" data-fr="Entraînement régulier axé sur la discipline personnelle, la persévérance et le dépassement de soi." data-en="Regular training focused on self-discipline, perseverance, and personal growth.">
+              Entraînement régulier axé sur la discipline personnelle, la persévérance et le dépassement de soi.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION DÉVELOPPEMENT DE CARRIÈRE -->
+    <section id="career" class="space-y-6">
+      <div class="border-b border-slate-300 pb-2">
+        <h2 class="text-2xl font-bold text-navy" data-fr="Développement de carrière" data-en="Career Development">Développement de carrière</h2>
+      </div>
+
+     <!-- ELEVATOR PITCH -->
+      <div class="bg-white p-6 rounded-lg border border-slate-200 shadow-sm space-y-4">
+        <h3 class="text-xl font-bold text-slate-900" data-fr="Elevator Pitch" data-en="Elevator Pitch">Elevator Pitch</h3>
+        <p class="text-base text-slate-600" data-fr="Présentation vidéo de 2 minutes résumant mon parcours, mes compétences et mes objectifs professionnels." data-en="2-minute video presentation summarizing my background, skills, and professional goals.">
+          Présentation vidéo de 2 minutes résumant mon parcours, mes compétences et mes objectifs professionnels.
+        </p>
+        <div class="aspect-video bg-slate-900 rounded border border-slate-200 overflow-hidden shadow-sm flex items-center justify-center">
+          <video controls class="w-full h-full object-cover">
+            <source src="Video_Pitch_Esteban_Deltrel.mp4" type="video/mp4">
+            <span data-fr="Votre navigateur ne supporte pas la lecture de vidéos." data-en="Your browser does not support video playback.">Votre navigateur ne supporte pas la lecture de vidéos.</span>
+          </video>
+        </div>
+      </div>
+      <!-- MODÈLES INSPIRANTS (3 PROFILS DÉTAILLÉS) -->
+      <div class="bg-white p-6 rounded-lg border border-slate-200 shadow-sm space-y-4">
+        <h3 class="text-xl font-bold text-slate-900" data-fr="Modèles inspirants (Role Models)" data-en="Inspiring Role Models">Modèles inspirants (Role Models)</h3>
+        <p class="text-base text-slate-600" data-fr="Analyse de trois parcours d'ingénieurs aux profils variés pour explorer les différentes perspectives professionnelles du métier d'ingénieur et de la filière 3EA." data-en="Analysis of three varied engineering career paths to explore the different professional perspectives of the engineering profession and the 3EA field.">
+          Analyse de trois parcours d'ingénieurs aux profils variés pour explorer les différentes perspectives professionnelles du métier d'ingénieur et de la filière 3EA.
+        </p>
+
+        <div class="space-y-5 pt-2">
+          
+          <!-- PROFIL 1 : Sandrine Serres -->
+          <div class="p-5 bg-slate-50 rounded border border-slate-200 space-y-3">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 border-b border-slate-200 pb-3">
+              <div class="flex items-center space-x-3">
+                <span class="w-7 h-7 rounded-full bg-navy text-white text-sm font-bold flex items-center justify-center">1</span>
+                <h4 class="font-bold text-slate-900 text-base">Sandrine Serres – Responsable Ingénierie (Airbus)</h4>
+              </div>
+              <span class="text-xs bg-slate-200 text-slate-700 px-3 py-1 rounded font-medium self-start md:self-auto" data-fr="Aéronautique & Management" data-en="Aeronautics & Management">Aéronautique & Management</span>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm pt-1">
+              <div>
+                <p class="text-slate-700"><span class="font-semibold text-slate-900" data-fr="Parcours & École : " data-en="Background & School: ">Parcours & École : </span><span data-fr="Diplôme d'ingénieur généraliste / Aéronautique." data-en="General Engineering / Aeronautics degree.">Diplôme d'ingénieur généraliste / Aéronautique.</span></p>
+                <p class="text-slate-700 mt-2"><span class="font-semibold text-slate-900" data-fr="Évolution : " data-en="Career Evolution: ">Évolution : </span><span data-fr="Ingénieure d'études systèmes → Responsable d'équipe et suivi de projets chez Airbus." data-en="Systems Engineer → Team & Project Manager at Airbus.">Ingénieure d'études systèmes → Responsable d'équipe et suivi de projets chez Airbus.</span></p>
+              </div>
+              <div>
+                <p class="text-slate-700"><span class="font-semibold text-slate-900" data-fr="Compétences clés : " data-en="Key Skills: ">Compétences clés : </span><span data-fr="Gestion de projet, suivi technique, coordination d'équipe et organisation." data-en="Project management, technical follow-up, team coordination, and organization.">Gestion de projet, suivi technique, coordination d'équipe et organisation.</span></p>
+              </div>
+            </div>
+            <div class="bg-white p-3.5 rounded border border-slate-200 text-sm text-slate-700 mt-3">
+              <p><span class="font-semibold text-navy" data-fr="Ce que j'en retiens : " data-en="Key Takeaway: ">Ce que j'en retiens : </span><span data-fr="Un profil d'encadrement mixte qui associe le management humain au pilotage technique. C'est la perspective qui m'attire le plus actuellement : coordonner des projets et mener une équipe tout en conservant une forte légitimité technique." data-en="A hybrid management profile combining team leadership with technical steering. This is currently the path that appeals to me most: coordinating projects and leading a team while maintaining strong technical grounding.">Un profil d'encadrement mixte qui associe le management humain au pilotage technique. C'est la perspective qui m'attire le plus actuellement : coordonner des projets et mener une équipe tout en conservant une forte légitimité technique.</span></p>
+            </div>
+          </div>
+
+          <!-- PROFIL 2 : Frédéric Deltrel -->
+          <div class="p-5 bg-slate-50 rounded border border-slate-200 space-y-3">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 border-b border-slate-200 pb-3">
+              <div class="flex items-center space-x-3">
+                <span class="w-7 h-7 rounded-full bg-navy text-white text-sm font-bold flex items-center justify-center">2</span>
+                <h4 class="font-bold text-slate-900 text-base">Frédéric Deltrel – Ingénieur Projets Industriels</h4>
+              </div>
+              <span class="text-xs bg-slate-200 text-slate-700 px-3 py-1 rounded font-medium self-start md:self-auto" data-fr="Industrie & Terrain" data-en="Industry & Field">Industrie & Terrain</span>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm pt-1">
+              <div>
+                <p class="text-slate-700"><span class="font-semibold text-slate-900" data-fr="Parcours & École : " data-en="Background & School: ">Parcours & École : </span><span data-fr="Formation d'ingénieur en Génie Électrique & Automatique." data-en="Engineering degree in Electrical Engineering & Automatics.">Formation d'ingénieur en Génie Électrique & Automatique.</span></p>
+                <p class="text-slate-700 mt-2"><span class="font-semibold text-slate-900" data-fr="Évolution : " data-en="Career Evolution: ">Évolution : </span><span data-fr="Ingénieur automatismes sur site → Chef de projet ingénierie industrielle." data-en="On-site Automation Engineer → Industrial Engineering Project Manager.">Ingénieur automatismes sur site → Chef de projet ingénierie industrielle.</span></p>
+              </div>
+              <div>
+                <p class="text-slate-700"><span class="font-semibold text-slate-900" data-fr="Compétences clés : " data-en="Key Skills: ">Compétences clés : </span><span data-fr="Suivi des installations, gestion des aléas terrain, électrotechnique et automatisme." data-en="Site installation follow-up, field issue management, electrotechnics and automation.">Suivi des installations, gestion des aléas terrain, électrotechnique et automatisme.</span></p>
+              </div>
+            </div>
+            <div class="bg-white p-3.5 rounded border border-slate-200 text-sm text-slate-700 mt-3">
+              <p><span class="font-semibold text-navy" data-fr="Ce que j'en retiens : " data-en="Key Takeaway: ">Ce que j'en retiens : </span><span data-fr="Une illustration concrète de l'ingénierie opérationnelle. Ce parcours met en avant la réactivité et la maîtrise technique indispensables pour appréhender les enjeux complexes des sites industriels. C'est une facette du métier d'ingénieur qui demande une réelle capacité d'adaptation et de prise de décision face aux aléas du terrain." data-en="A concrete illustration of operational engineering. This career path highlights the responsiveness and technical mastery required to tackle the complex challenges of industrial sites. It is a facet of the engineering profession that requires a real ability to adapt and make decisions when facing unpredictable field events.">Une illustration concrète de l'ingénierie opérationnelle. Ce parcours met en avant la réactivité et la maîtrise technique indispensables pour appréhender les enjeux complexes des sites industriels. C'est une facette du métier d'ingénieur qui demande une réelle capacité d'adaptation et de prise de décision face aux aléas du terrain.</span></p>
+            </div>
+          </div>
+
+          <!-- PROFIL 3 : Marc Laurain -->
+          <div class="p-5 bg-slate-50 rounded border border-slate-200 space-y-3">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 border-b border-slate-200 pb-3">
+              <div class="flex items-center space-x-3">
+                <span class="w-7 h-7 rounded-full bg-navy text-white text-sm font-bold flex items-center justify-center">3</span>
+                <h4 class="font-bold text-slate-900 text-base">Marc Laurain – Senior IC Design Engineer (STMicroelectronics)</h4>
+              </div>
+              <span class="text-xs bg-slate-200 text-slate-700 px-3 py-1 rounded font-medium self-start md:self-auto" data-fr="Technique & Circuits Intégrés" data-en="Technical & Integrated Circuits">Technique & Circuits Intégrés</span>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm pt-1">
+              <div>
+                <p class="text-slate-700"><span class="font-semibold text-slate-900" data-fr="Parcours & École : " data-en="Background & School: ">Parcours & École : </span><span data-fr="École d'ingénieurs spécialisée en Microélectronique." data-en="Engineering school specialized in Microelectronics.">École d'ingénieurs spécialisée en Microélectronique.</span></p>
+                <p class="text-slate-700 mt-2"><span class="font-semibold text-slate-900" data-fr="Évolution : " data-en="Career Evolution: ">Évolution : </span><span data-fr="Ingénieur conception numérique junior → Architecte & Senior IC Design Engineer." data-en="Junior Digital Design Engineer → Architect & Senior IC Design Engineer.">Ingénieur conception numérique junior → Architecte & Senior IC Design Engineer.</span></p>
+              </div>
+              <div>
+                <p class="text-slate-700"><span class="font-semibold text-slate-900" data-fr="Compétences clés : " data-en="Key Skills: ">Compétences clés : </span><span data-fr="Conception de puces, langages VHDL/Verilog, logique numérique et optimisation." data-en="Chip design, VHDL/Verilog languages, digital logic and optimization.">Conception de puces, langages VHDL/Verilog, logique numérique et optimisation.</span></p>
+              </div>
+            </div>
+            <div class="bg-white p-3.5 rounded border border-slate-200 text-sm text-slate-700 mt-3">
+              <p><span class="font-semibold text-navy" data-fr="Ce que j'en retiens : " data-en="Key Takeaway: ">Ce que j'en retiens : </span><span data-fr="Une orientation centrée sur l'expertise technique et l'innovation de pointe. Une expérience en stage me permettra d'évaluer concrètement si le métier d'ingénieur purement technique pourrait me plaire." data-en="An orientation focused on technical expertise and cutting-edge innovation. An internship experience will allow me to concretely evaluate whether a purely technical engineering role would suit me.">Une orientation centrée sur l'expertise technique et l'innovation de pointe. Une expérience en stage me permettra d'évaluer concrètement si le métier d'ingénieur purement technique pourrait me plaire.</span></p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+     <!-- PROJETS DE MOBILITÉ POTENTIELS ASSOCIÉS (ÉCHANGES UNIVERSITAIRES) -->
+      <div class="bg-white p-6 rounded-lg border border-slate-200 shadow-sm space-y-4">
+        <h3 class="text-xl font-bold text-slate-900" data-fr="Projets de mobilité internationale potentiels" data-en="Potential International Mobility Projects">Projets de mobilité internationale potentiels</h3>
+        <p class="text-base text-slate-600" data-fr="Sélection de trois pistes d'échanges universitaires internationaux en adéquation directe avec les domaines d'expertise de mes rôles modèles." data-en="Selection of three international university exchange tracks directly aligned with the expertise domains of my role models.">
+          Sélection de trois pistes d'échanges universitaires internationaux en adéquation directe avec les domaines d'expertise de mes rôles modèles.
+        </p>
+
+        <div class="space-y-5 pt-2">
+          
+         <!-- Piste 1 : Aligné avec Sandrine Serres -->
+          <div class="p-5 bg-slate-50 rounded border border-slate-200 space-y-3">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 border-b border-slate-200 pb-3">
+              <div>
+                <h4 class="font-bold text-slate-900 text-base" data-fr="Échange universitaire – Ingénierie des systèmes complexes & Management" data-en="University Exchange – Complex Systems Engineering & Management">Échange universitaire – Ingénierie des systèmes complexes & Management</h4>
+              </div>
+              <span class="text-xs bg-blue-100 text-blue-800 px-3 py-1 rounded font-medium self-start md:self-auto" data-fr="Aligné avec : Sandrine Serres" data-en="Aligned with: Sandrine Serres">Aligné avec : Sandrine Serres</span>
+            </div>
+            <p class="text-sm text-slate-600 pt-1" data-fr="Piste d'échange pour approfondir mes compétences en ingénierie des systèmes complexes, notamment dans le domaine électronique, la gestion de projets industriels et les outils de décision. Mon objectif est d'acquérir une vision globale du pilotage de projets techniques, ce qui me sera particulièrement utile pour intégrer un grand pôle aéronautique européen. À travers cette mobilité, idéalement dans un pays comme l'Allemagne — reconnu pour son expertise dans les systèmes complexes —, je souhaite développer un profil polyvalent associant un bon niveau technique à des compétences en management, tout en perfectionnant mon anglais et mon allemand." data-en="Exchange track to deepen my skills in complex systems engineering, particularly in electronics, industrial project management, and decision tools. My goal is to gain a global vision of technical project management, which will be valuable for joining a major European aeronautical hub. Through this mobility, ideally in a country like Germany—renowned for its expertise in complex systems—I aim to develop a versatile profile combining solid technical knowledge with management skills, while perfecting my English and German.">
+              Piste d'échange pour approfondir mes compétences en ingénierie des systèmes complexes, notamment dans le domaine électronique, la gestion de projets industriels et les outils de décision. Mon objectif est d'acquérir une vision globale du pilotage de projets techniques, ce qui me sera particulièrement utile pour intégrer un grand pôle aéronautique européen. À travers cette mobilité, idéalement dans un pays comme l'Allemagne — reconnu pour son expertise dans les systèmes complexes —, je souhaite développer un profil polyvalent associant un bon niveau technique à des compétences en management, tout en perfectionnant mon anglais et mon allemand.
+            </p>
+          </div>
+
+          <!-- Piste 2 : Aligné avec Frédéric Deltrel -->
+          <div class="p-5 bg-slate-50 rounded border border-slate-200 space-y-3">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 border-b border-slate-200 pb-3">
+              <div>
+                <h4 class="font-bold text-slate-900 text-base" data-fr="Échange universitaire – Automatique & Gestion de l'énergie" data-en="University Exchange – Automatics & Energy Management">Échange universitaire – Automatique & Gestion de l'énergie</h4>
+              </div>
+              <span class="text-xs bg-blue-100 text-blue-800 px-3 py-1 rounded font-medium self-start md:self-auto" data-fr="Aligné avec : Frédéric Deltrel" data-en="Aligned with: Frédéric Deltrel">Aligné avec : Frédéric Deltrel</span>
+            </div>
+            <p class="text-sm text-slate-600 pt-1" data-fr="Piste d'échange pour renforcer mes bases en automatique, contrôle de procédés et optimisation des réseaux électriques. Je souhaite découvrir les méthodes permettant de gérer l'énergie et de piloter les infrastructures industrielles, un enjeu crucial dans l'industrie actuelle. Un pays comme la Suède ou la Norvège constituerait un choix très pertinent : ces nations font face à de fortes contraintes énergétiques et proposent des formations de premier plan dans ce domaine, tout en m'offrant une immersion culturelle et linguistique totalement dépaysante." data-en="Exchange track to strengthen my background in automatics, process control, and electrical grid optimization. I wish to discover methods for managing energy and controlling industrial infrastructure, a crucial challenge in modern industry. A country like Sweden or Norway would be a highly relevant choice: these nations face strong energy constraints and offer top-tier training in this field, while providing a completely new cultural and linguistic immersion.">
+              Piste d'échange pour renforcer mes bases en automatique, contrôle de procédés et optimisation des réseaux électriques. Je souhaite découvrir les méthodes permettant de gérer l'énergie et de piloter les infrastructures industrielles, un enjeu crucial dans l'industrie actuelle. Un pays comme la Suède ou la Norvège constituerait un choix très pertinent : ces nations font face à de fortes contraintes énergétiques et proposent des formations de premier plan dans ce domaine, tout en m'offrant une immersion culturelle et linguistique totalement dépaysante.
+            </p>
+          </div>
+
+         <!-- Piste 3 : Aligné avec Marc Laurain -->
+          <div class="p-5 bg-slate-50 rounded border border-slate-200 space-y-3">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 border-b border-slate-200 pb-3">
+              <div>
+                <h4 class="font-bold text-slate-900 text-base" data-fr="Échange universitaire – Microélectronique & Conception de circuits intégrés" data-en="University Exchange – Microelectronics & Integrated Circuit Design">Échange universitaire – Microélectronique & Conception de circuits intégrés</h4>
+              </div>
+              <span class="text-xs bg-blue-100 text-blue-800 px-3 py-1 rounded font-medium self-start md:self-auto" data-fr="Aligné avec : Marc Laurain" data-en="Aligned with: Marc Laurain">Aligné avec : Marc Laurain</span>
+            </div>
+            <p class="text-sm text-slate-600 pt-1" data-fr="Piste d'échange pour me spécialiser dans la conception de circuits intégrés (ASIC/SoC), la logique numérique et la microélectronique de pointe. Mon objectif est d'approfondir mes connaissances théoriques et pratiques afin de vérifier si l'ingénierie très technique me plaît réellement, n'y ayant jamais été confronté directement jusqu'ici. Une immersion à l'international est l'opportunité idéale pour tester cette voie au quotidien tout en découvrant une nouvelle culture." data-en="Exchange track to specialize in integrated circuit design (ASIC/SoC), digital logic, and advanced microelectronics. My goal is to deepen my theoretical and practical knowledge to see whether deep technical engineering really suits me, as I have not yet been directly confronted with it. An international immersion is the ideal opportunity to test this path daily while discovering a new culture.">
+              Piste d'échange pour me spécialiser dans la conception de circuits intégrés (ASIC/SoC), la logique numérique et la microélectronique de pointe. Mon objectif est d'approfondir mes connaissances théoriques et pratiques afin de vérifier si l'ingénierie très technique me plaît réellement, n'y ayant jamais été confronté directement jusqu'ici. Une immersion à l'international est l'opportunité idéale pour tester cette voie au quotidien tout en découvrant une nouvelle culture.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- EXPÉRIENCES PASSÉES (DÉVELOPPÉES) -->
+      <div class="bg-white p-6 rounded-lg border border-slate-200 shadow-sm space-y-4">
+        <h3 class="text-xl font-bold text-slate-900" data-fr="Expériences passées" data-en="Past Experiences">Expériences passées</h3>
+        <p class="text-base text-slate-600" data-fr="Présentation détaillée de mes premières immersions professionnelles en entreprise." data-en="Detailed presentation of my first professional immersions in industry.">
+          Présentation détaillée de mes premières immersions professionnelles en entreprise.
+        </p>
+
+        <div class="space-y-6 pt-2">
+          
+          <!-- EXPÉRIENCE 1 : AIRBUS -->
+          <div class="p-5 bg-slate-50 rounded border border-slate-200 space-y-4">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-2 border-b border-slate-200 pb-3">
+              <div>
+                <h4 class="font-bold text-slate-900 text-base" data-fr="Stagiaire Ingénieur – Certification & Gestion des Occurrences" data-en="Engineering Intern – Certification & Occurrence Management">Stagiaire Ingénieur – Certification & Gestion des Occurrences</h4>
+                <p class="text-sm font-semibold text-navy">Airbus (Toulouse, France)</p>
+              </div>
+              <span class="text-sm bg-slate-200 text-slate-700 px-3 py-1.5 rounded font-medium whitespace-nowrap" data-fr="Mai 2026 – Juin 2026 (2 mois)" data-en="May 2026 – June 2026 (2 mos)">Mai 2026 – Juin 2026 (2 mois)</span>
+            </div>
+
+            <div class="space-y-3 text-sm text-slate-700">
+              <p data-fr="Immersion au cœur du pôle certification d'Airbus visant à appréhender le rôle de l'ingénieur dans le suivi de la navigabilité et la sécurité des avions en service." data-en="Immersion within Airbus certification department to understand the engineer's role in aircraft airworthiness and in-service safety.">
+                Immersion au cœur du pôle certification d'Airbus visant à appréhender le rôle de l'ingénieur dans le suivi de la navigabilité et la sécurité des avions en service.
+              </p>
+              
+              <div class="space-y-2 pt-1">
+                <div class="flex items-start space-x-2">
+                  <span class="text-navy font-bold">•</span>
+                  <p><span class="font-semibold text-slate-900" data-fr="Analyse & Gestion des Occurrences : " data-en="Occurrence Analysis & Management: ">Analyse & Gestion des Occurrences : </span><span data-fr="Suivi et analyse des événements techniques imprévus (occurrences) présentant un risque potentiel. Participation à la recherche des causes et à l'élaboration de mesures correctives pour garantir la sûreté de la flotte." data-en="Tracking and analysis of unexpected technical events (occurrences) carrying potential risks. Participation in root-cause analysis and the development of corrective measures to ensure fleet safety.">Suivi et analyse des événements techniques imprévus (occurrences) présentant un risque potentiel. Participation à la recherche des causes et à l'élaboration de mesures correctives pour garantir la sûreté de la flotte.</span></p>
+                </div>
+                
+                <div class="flex items-start space-x-2">
+                  <span class="text-navy font-bold">•</span>
+                  <p><span class="font-semibold text-slate-900" data-fr="Découverte du processus de certification : " data-en="Discovery of the certification process: ">Découverte du processus de certification : </span><span data-fr="Assimilation des contraintes réglementaires et des critères stricts de navigabilité (normes EASA) régissant l'industrie aéronautique européenne." data-en="Assimilation of regulatory constraints and strict airworthiness criteria (EASA standards) governing the European aeronautical industry.">Assimilation des contraintes réglementaires et des critères stricts de navigabilité (normes EASA) régissant l'industrie aéronautique européenne.</span></p>
+                </div>
+
+                <div class="flex items-start space-x-2">
+                  <span class="text-navy font-bold">•</span>
+                  <p><span class="font-semibold text-slate-900" data-fr="Réseau & Immersion Métier : " data-en="Networking & Career Insights: ">Réseau & Immersion Métier : </span><span data-fr="Entretiens et échanges réguliers avec de nombreux ingénieurs aux profils variés pour découvrir la diversité du métier d'ingénieur." data-en="Regular interviews and discussions with numerous engineers from diverse backgrounds to discover the diversity of the engineering profession.">Entretiens et échanges réguliers avec de nombreux ingénieurs aux profils variés pour découvrir la diversité du métier d'ingénieur.</span></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap gap-2 pt-2">
+              <span class="text-xs bg-slate-200 text-slate-700 px-2.5 py-1 rounded font-medium" data-fr="Certification Aéronautique" data-en="Aeronautical Certification">Certification Aéronautique</span>
+              <span class="text-xs bg-slate-200 text-slate-700 px-2.5 py-1 rounded font-medium" data-fr="Analyse d'Occurrences" data-en="Occurrence Analysis">Analyse d'Occurrences</span>
+              <span class="text-xs bg-slate-200 text-slate-700 px-2.5 py-1 rounded font-medium" data-fr="Sûreté de la Flotte" data-en="Fleet Safety">Sûreté de la Flotte</span>
+              <span class="text-xs bg-slate-200 text-slate-700 px-2.5 py-1 rounded font-medium" data-fr="Normes EASA" data-en="EASA Standards">Normes EASA</span>
+            </div>
+          </div>
+
+          <!-- EXPÉRIENCE 2 : HYPER U -->
+          <div class="p-5 bg-slate-50 rounded border border-slate-200 space-y-4">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-2 border-b border-slate-200 pb-3">
+              <div>
+                <h4 class="font-bold text-slate-900 text-base" data-fr="Employé Polyvalent de Grande Surface" data-en="Multiskilled Supermarket Employee">Employé Polyvalent de Grande Surface</h4>
+                <p class="text-sm font-semibold text-navy">Hyper U (Villefranche-de-Lauragais, France)</p>
+              </div>
+              <span class="text-sm bg-slate-200 text-slate-700 px-3 py-1.5 rounded font-medium whitespace-nowrap" data-fr="Juil. 2026 – Août 2026 (2 mois)" data-en="July 2026 – Aug. 2026 (2 mos)">Juil. 2026 – Août 2026 (2 mois)</span>
+            </div>
+
+            <div class="space-y-3 text-sm text-slate-700">
+              <p data-fr="Expérience estivale en CDD au sein d'une grande surface commerciale requérant une forte réactivité et une excellente organisation quotidienne." data-en="Summer CDD position in a commercial supermarket requiring high responsiveness and strong daily organizational skills.">
+                Expérience estivale en CDD au sein d'une grande surface commerciale requérant une forte réactivité et une excellente organisation quotidienne.
+              </p>
+
+              <div class="space-y-2 pt-1">
+                <div class="flex items-start space-x-2">
+                  <span class="text-navy font-bold">•</span>
+                  <p><span class="font-semibold text-slate-900" data-fr="Gestion des Stocks & Logistique : " data-en="Stock Management & Logistics: ">Gestion des Stocks & Logistique : </span><span data-fr="Mise en rayon quotidienne des produits, gestion des stocks, contrôle des arrivages et optimisation de l'organisation en réserve." data-en="Daily shelf stocking, inventory replenishment control, and warehouse space optimization.">Mise en rayon quotidienne des produits, gestion du réassort, contrôle des arrivages et optimisation de l'organisation en réserve.</span></p>
+                </div>
+
+                <div class="flex items-start space-x-2">
+                  <span class="text-navy font-bold">•</span>
+                  <p><span class="font-semibold text-slate-900" data-fr="Relation Client & Autonomie : " data-en="Customer Service & Autonomy: ">Relation Client & Autonomie : </span><span data-fr="Accueil, orientation et conseil de la clientèle sur le terrain. Travail dans un rythme soutenu exigeant autonomie et gestion des priorités." data-en="Welcoming, guiding, and advising customers on-site. Working in a fast-paced environment requiring self-reliance and priority management.">Accueil, orientation et conseil de la clientèle sur le terrain. Travail dans un rythme soutenu exigeant autonomie et gestion des priorités.</span></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap gap-2 pt-2">
+              <span class="text-xs bg-slate-200 text-slate-700 px-2.5 py-1 rounded font-medium" data-fr="Autonomie" data-en="Autonomy">Autonomie</span>
+              <span class="text-xs bg-slate-200 text-slate-700 px-2.5 py-1 rounded font-medium" data-fr="Gestion du Temps" data-en="Time Management">Gestion du Temps</span>
+              <span class="text-xs bg-slate-200 text-slate-700 px-2.5 py-1 rounded font-medium" data-fr="Relation Client" data-en="Customer Relations">Relation Client</span>
+              <span class="text-xs bg-slate-200 text-slate-700 px-2.5 py-1 rounded font-medium" data-fr="Sens des Responsabilités" data-en="Responsibility">Sens des Responsabilités</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION CONTACT & DOCUMENTS -->
+    <section id="contact" class="bg-white p-6 rounded-lg border border-slate-200 shadow-sm space-y-6">
+      <div class="border-b border-slate-200 pb-2">
+        <h2 class="text-2xl font-bold text-navy" data-fr="Contact" data-en="Contact">Contact</h2>
+      </div>
+      
+      <!-- Informations de contact avec Téléphone -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-base text-slate-700">
+        <div>
+          <span class="font-semibold block text-slate-900" data-fr="Nom & Prénom :" data-en="Full Name:">Nom & Prénom :</span>
+          <span>Esteban Deltrel</span>
+        </div>
+        <div>
+          <span class="font-semibold block text-slate-900" data-fr="Établissement :" data-en="Institution:">Établissement :</span>
+          <span>ENSEEIHT – Toulouse INP (3EA)</span>
+        </div>
+        <div>
+          <span class="font-semibold block text-slate-900" data-fr="Email :" data-en="Email:">Email :</span>
+          <a href="mailto:esteban.deltrel@toulouse-inp.fr" class="text-blue-600 hover:underline">esteban.deltrel@toulouse-inp.fr</a>
+        </div>
+        <div>
+          <span class="font-semibold block text-slate-900" data-fr="Téléphone :" data-en="Phone:">Téléphone :</span>
+          <a href="tel:+33772260136" class="text-blue-600 hover:underline">+33 7 72 26 01 36</a>
+        </div>
+        <div>
+          <span class="font-semibold block text-slate-900" data-fr="Statut :" data-en="Status:">Statut :</span>
+          <span data-fr="Étudiant Ingénieur 1e année" data-en="1st Year Engineering Student">Étudiant Ingénieur 1e année</span>
+        </div>
+      </div>
+
+      <!-- Boutons CV (FR & EN) et LinkedIn unique -->
+      <div class="border-t border-slate-200 pt-5 space-y-4">
+        <h3 class="font-bold text-slate-900 text-base" data-fr="Documents & Réseaux Professionnels" data-en="Documents & Professional Networks">Documents & Réseaux Professionnels</h3>
+        <div class="flex flex-wrap gap-3">
+          <a href="CV_Esteban_Deltrel_FR.pdf" target="_blank" download class="inline-flex items-center bg-navy hover:bg-slate-800 text-white font-medium text-sm md:text-base px-5 py-3 rounded transition shadow-sm" data-fr="Télécharger CV (FR)" data-en="Download CV (FR)">
+            Télécharger CV (FR)
+          </a>
+          <a href="CV_Esteban_Deltrel_EN.pdf" target="_blank" download class="inline-flex items-center bg-slate-700 hover:bg-slate-800 text-white font-medium text-sm md:text-base px-5 py-3 rounded transition shadow-sm" data-fr="Télécharger CV (EN)" data-en="Download CV (EN)">
+            Télécharger CV (EN)
+          </a>
+          <a href="https://www.linkedin.com/in/esteban-deltrel-91738139a/" target="_blank" class="inline-flex items-center bg-blue-700 hover:bg-blue-800 text-white font-medium text-sm md:text-base px-5 py-3 rounded transition shadow-sm" data-fr="Profil LinkedIn" data-en="LinkedIn Profile">
+            Profil LinkedIn
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- PIED DE PAGE / BANDE BLEUE EN BAS -->
+  <footer class="bg-navy text-white text-center py-5 text-sm font-medium mt-8 border-t border-slate-700">
+    <p data-fr="Esteban Deltrel – Portfolio | Étudiant Ingénieur 1e année" data-en="Esteban Deltrel – Portfolio | 1st Year Engineering Student">
+      Esteban Deltrel – Portfolio | Étudiant Ingénieur 1e année
+    </p>
+  </footer>
+
+  <!-- SCRIPT DE BILINGUISME (FR/EN) -->
+  <script>
+    const langBtn = document.getElementById('lang-toggle');
+    let currentLang = 'fr';
+
+    langBtn.addEventListener('click', () => {
+      currentLang = currentLang === 'fr' ? 'en' : 'fr';
+      langBtn.textContent = currentLang === 'fr' ? 'EN' : 'FR';
+      
+      document.querySelectorAll('[data-fr]').forEach(el => {
+        if (el.dataset[currentLang]) {
+          el.textContent = el.dataset[currentLang];
+        }
+      });
+    });
+  </script>
+</body>
+</html>
